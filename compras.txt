@@ -3,3 +3,8 @@ Compras:
 Libros: 
 
 You Dont Know JS
+
+
+Hardware: 
+
+RTX 3090
