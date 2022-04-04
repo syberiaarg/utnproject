@@ -1,18 +1,59 @@
 .title {
-  text-align: center;
-  font-size: 30px;
+  display: block;
+  font-size: 3rem;
+  font-family: DejaVu Sans Mono, monospace;
+  font-style: oblique;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 16ch;
+  animation: typing 2s steps(16), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#data {
+  display: flex;
+  list-style-type: none;
+  font-family: Helvetica;
+  font-size: 1.5em;
+  margin: 2em;
+  padding: 1.3em;
+  border-radius: 10px;
+}
+
+#data li {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  padding: 2%;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .firstPart {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 }
 
 .firstPart img {
-  width: 110px;
-  height: 130px;
+  width: 150px;
+  height: 170px;
   justify-content: left;
+  border-radius: 10px;
 }
 
 .learningList img {
